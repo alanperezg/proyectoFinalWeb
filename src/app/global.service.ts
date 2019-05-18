@@ -19,7 +19,7 @@ import { Mesero } from './beans/Mesero';
   })
   export class GlobalService{
     constructor(private httpClient: HttpClient, private cookieService: CookieService, private router: Router) { }
-    apiUrl = 'http://puntoventaalan.herokuapp.com/api/';
+    apiUrl = 'http://127.0.0.1/api/';
     private lastId = 1;
     cambioStatusLog = new Subject<boolean>();
     private statusLog: boolean = false;
@@ -136,7 +136,23 @@ import { Mesero } from './beans/Mesero';
       });
       return subject;
     }
-
+    login(user, pass){
+      let subject = new Subject<Boolean>();
+      let body = {usuario:user, password:pass};
+      this.httpClient.post(this.apiUrl + 'login', body).subscribe(res => {
+        class Token {
+          constructor(
+            public token: string) { }
+        };
+        let token = res as Token;
+        this.cookieService.set('token', token.token, 600000);
+        this.router.navigate(['/admin']);
+        subject.next(true);
+      }, err => {
+        subject.next(false);
+      });
+      return subject;
+    }
 
 
 

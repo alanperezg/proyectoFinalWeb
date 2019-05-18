@@ -1,20 +1,21 @@
 <div class="login-module">
   <div class="login-title">Administrator Login</div>
+  <div class="wrong-password-alert" *ngIf="appearWrongPassword" >Ha ingresado usuario o contraseña incorrectamente</div>
   <div class="login-form">
     <div class="login-row">
       <div class="login-row-title">Usuario</div>
       <div class="login-row-input">
-        <input type="text">
+        <input type="text" name="user" [(ngModel)]="user">
       </div>
     </div>
     <div class="login-row">
       <div class="login-row-title">Contraseña</div>
       <div class="login-row-input">
-        <input type="text">
+        <input type="password" name="password" [(ngModel)]="password">
       </div>
     </div>
     <div class="login-row login-btn-container">
-      <app-button buttonText="Iniciar sesión"></app-button>
+      <app-button buttonText="Iniciar sesión" (onClick)="loginBtn()"></app-button>
     </div>
   </div>
 </div>

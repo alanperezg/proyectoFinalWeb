@@ -28,3 +28,14 @@
 .login-btn-container{
     text-align:right;
 }
+.wrong-password-alert{
+    width: 340px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffd1e1;
+    border-radius: 8px;
+    color: #d60808;
+    border: 1px solid #ffaeae;
+}

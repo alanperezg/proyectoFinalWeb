@@ -1,0 +1,40 @@
+<div>
+  <app-add-productos-modal 
+  [setVisibility]="addProductoModalVisibility.asObservable()"
+  [cuentaId]="cuentaId"></app-add-productos-modal>
+  <div class="return-bar" routerLink="/admin"><i class="fa fa-chevron-left" aria-hidden="true"></i> Cuentas abiertas</div>
+  <div class="cuenta-info-container">
+    <div class="cuenta-info">
+        <div class="cuenta-mesa"><b>Mesa:</b> {{cuenta.mesa}}</div>
+        <div class="cuenta-mesero"><b>Mesero:</b> {{cuenta.mesero}}</div>
+    </div>
+    <div class="cuenta-buttons">
+      <app-button (onClick)="cerrarCuenta()" buttonText="Cerrar cuenta"></app-button>
+    </div>
+  </div>
+  <div class="cuenta-lista-productos">
+    <app-productos-list
+      (addProductoClick)="addProductOpenModal()"
+      listTitle="Productos en la cuenta"
+      [productos]="productosCuenta"></app-productos-list>
+  </div>
+  <div class="align-right-flex">
+    <div class="cuenta-resumen">
+      <div class="cuenta-resumen-title">Resumen de cuenta</div>
+      <div class="cuenta-resumen-container">
+        <div class="cuenta-resumen-row">
+            <div class="cuenta-resumen-row-header">Subtotal:</div>
+            <div class="cuenta-resumen-row-value">${{total}}</div>
+        </div>
+        <div class="cuenta-resumen-row">
+            <div class="cuenta-resumen-row-header">Descuento:</div>
+            <div class="cuenta-resumen-row-value">$0</div>
+        </div>
+        <div class="cuenta-resumen-row">
+            <div class="cuenta-resumen-row-header">Total:</div>
+            <div class="cuenta-resumen-row-value">${{total}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="productos-list">
+  <div class="right-align"><app-button buttonText="Agregar producto" (onClick)="addProductoBtn()"></app-button></div>
+  <div class="list-title">{{listTitle}}</div>
+  <div class="empty-list"
+  *ngIf = "productos.length < 1">No hay productos en esta cuenta...</div>
+  <div class="list-container"
+  *ngIf = "productos.length > 0">
+      <app-productos-list-item
+      *ngFor="let producto of productos"
+      [producto]="producto"></app-productos-list-item>
+  </div>
+</div>

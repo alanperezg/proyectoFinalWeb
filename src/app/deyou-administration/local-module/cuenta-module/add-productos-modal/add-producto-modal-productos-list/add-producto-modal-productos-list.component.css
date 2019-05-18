@@ -1,0 +1,16 @@
+.productos-title{
+    font-size: 16px;
+    color: #949494;
+    cursor:pointer;
+}
+.productos-title i{
+    font-size: 14px;
+}
+.productos-title:hover{
+    color:#000;
+}
+.productos-list{
+    margin-top:10px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+}

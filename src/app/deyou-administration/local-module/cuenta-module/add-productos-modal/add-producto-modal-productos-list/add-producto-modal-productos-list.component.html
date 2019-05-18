@@ -1,0 +1,9 @@
+<div>
+    <div class="productos-title" (click)="returnCategoriasBtnClick()"><i _ngcontent-oye-c3="" aria-hidden="true" class="fa fa-chevron-left"></i> Categorias</div>
+    <div class="productos-list">
+      <app-add-producto-modal-productos-list-item 
+      *ngFor="let producto of productos"
+      [producto]="producto"
+      (inDeClickEvent) = "inDeClickEventClick()"></app-add-producto-modal-productos-list-item>
+    </div>
+  </div>

@@ -1,0 +1,31 @@
+<div *ngIf="visibility" class="c-modal-background">
+  <div class="c-modal-container">
+      <form #f="ngForm" (ngSubmit)="abrirCuenta(f)">
+      <div class="c-modal-top">
+          <div class="c-modal-title">Abrir cuenta</div>
+      </div>
+      <div class="c-modal-content">
+        <div class="modal-row">
+          <div class="modal-row-title">Mesa</div>
+          <div class="modal-input">
+              <select [(ngModel)]="mesa" name="mesa">
+                  <option *ngFor="let mesa of mesas" [value]="mesa.id">{{mesa.nombre}}</option>
+                </select>
+          </div>
+        </div>
+        <div class="modal-row">
+          <div class="modal-row-title">Mesero</div>
+          <div class="modal-input">
+              <select [(ngModel)]="mesero" name="mesero">
+                <option *ngFor="let mesero of meseros" [value]="mesero.id">{{mesero.nombre}}</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div class="c-modal-footer">
+          <button type="submit" class="c-modal-button c-modal-button-black">Abrir cuenta</button>
+        <div class="c-modal-button c-modal-button-gray" (click)="hideModal()">Cancelar</div>
+      </div>
+    </form>
+  </div>
+</div> 

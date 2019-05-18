@@ -1,0 +1,8 @@
+<div class="producto-item">
+    <div>{{producto.nombre}}</div>
+    <div class="producto-item-counter-section">
+        <div class="product-item-minus" (click)="decreaseProducto()">-</div>
+        <div class="producto-item-counter">{{producto.cantidad}}</div>
+        <div class="product-item-plus" (click)="incrementProducto()">+</div>
+    </div>
+</div>

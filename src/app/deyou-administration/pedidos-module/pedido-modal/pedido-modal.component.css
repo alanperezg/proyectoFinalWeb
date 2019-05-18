@@ -1,0 +1,108 @@
+.c-modal-background::before, .c-modal-background::after {
+    flex: 0 0 55px;
+    content: '';
+}
+.c-modal-background{
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.c-modal-container{
+    position: relative;
+    z-index: 2;
+    border-radius: 2px;
+    background-color: #fff;
+    margin: auto;
+    width: 600px;
+}
+.c-modal-section-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.c-modal-section-title:not(:first-child){
+   margin-top:20px;
+}
+.c-modal-row{
+    margin-bottom: 5px;
+}
+.c-modal-row-value{
+    font-size: 14px;
+}
+.c-modal-row-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
+}
+.c-modal-title{
+    font-size: 20px;
+}
+.c-modal-top{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.radio-label{
+    margin-right:10px;
+    font-size: 14px;
+}
+.c-modal-title{
+    font-size: 20px;
+}
+.c-modal-container input[type="radio"]{
+    margin-right:5px;
+}
+.c-modal-content{
+    padding: 10px 40px;
+}
+.c-modal-footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.c-modal-button{
+    padding: 5px 8px;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left:10px;
+}
+.c-modal-button-gray{
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+}
+.c-modal-button-gray:hover{
+    background-color: #d0d0d0;
+    color:#fff;
+}
+.c-modal-button-black{
+    border: 1px solid #000;
+    background-color: #000;
+    color:#fff;
+}
+.c-modal-button-black:hover{
+    background-color:#67696b;
+    border: 1px solid #67696b;
+}
+.estado-pendiente{
+    color: #F44336
+}
+.estado-atendiendo{
+    color: #FF9800;
+}
+.estado-cocina{
+    color: #FFC107
+}
+.estado-encamino{
+    color: #009688;
+}

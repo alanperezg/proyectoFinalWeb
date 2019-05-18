@@ -1,0 +1,72 @@
+mat-toolbar{
+    
+    position: fixed;
+    z-index: 2;
+}
+img{
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+li:hover{
+    background: rgb(167, 159, 159);
+    color: rgb(70, 67, 67);   
+}
+a:active { color: rgb(70, 67, 67); }
+
+.min-menu{
+    background-color: transparent;
+}
+.min-menu mat-icon{
+    color: rgb(255, 255, 255);
+}
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+ 
+mat-toolbar{
+    border-radius: 3px;
+}
+/* Position dropMenu resolve*/
+.myMenu{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 50px;
+}
+
+ 
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
+}
+
+.sidenav-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .item-sidenav {
+    padding: 20px;
+  }
+
+  .example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

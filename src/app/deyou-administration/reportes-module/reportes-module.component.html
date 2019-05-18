@@ -1,0 +1,61 @@
+<div>
+    <div class="module-title">Reportes</div>
+    <div class="filtros-container">
+    <div class="filtros-row">
+      <div class="filtro">
+        <div class="filtro-nombre">Tipo de venta</div>
+        <div class="filtro-input input-venta">
+          <select [ngModel]="filterVenta">
+            <option value="2">Todas</option>
+            <option value="0">Locales</option>
+            <option value="1">Pedidos</option>
+          </select>
+        </div>
+      </div>
+      <div class="filtro">
+        <div class="filtro-nombre">Mesero</div>
+        <div class="filtro-input">
+          <select [(ngModel)]="filterMesero">
+            <option *ngFor="let mesero of meseros" [ngValue]="mesero.id">{{mesero.nombre}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="filtro">
+        <div class="filtro-nombre">Fecha inicio</div>
+        <div class="filtro-input">
+          <input type="date">
+        </div>
+      </div>
+      <div class="filtro">
+        <div class="filtro-nombre">Fecha fin</div>
+        <div class="filtro-input">
+          <input type="date">
+        </div>
+      </div>
+      <div class="filtro-btn">
+        <app-button buttonText="Realizar busqueda"></app-button>
+      </div>
+    </div>
+  </div>
+  <div class="tableros-result">
+    <div class="tablero">
+      <div class="tablero-name">Cantidad de ventas</div>
+      <div class="tablero-value">{{numeroVentas}}</div>
+    </div>
+    <div class="tablero">
+      <div class="tablero-name">Total de ventas</div>
+      <div class="tablero-value">${{totalVentas}}</div>
+    </div>
+    <div class="tablero">
+      <div class="tablero-name">Venta mas alta</div>
+      <div class="tablero-value">${{topVenta}}</div>
+    </div>
+    <div class="tablero">
+      <div class="tablero-name">Promedio de venta</div>
+      <div class="tablero-value">${{promedioVenta}}</div>
+    </div>
+  </div>
+  <div class="reporte-result">
+    <app-compras-list [ventas]="ventas"></app-compras-list>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="productos-list-item">
+  <div>{{producto.cantidad}} x {{producto.nombre}}</div>
+  <div class="productos-list-item-desglose">${{producto.precio}} x {{producto.cantidad}} =</div>
+  <div class="productos-list-item-precio">${{producto.precio*producto.cantidad}}</div>
+  <div class="productos-list-item-cancel" (click)="eliminarProducto()"><i class="fa fa-trash" aria-hidden="true"></i></div>
+</div>

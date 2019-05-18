@@ -1,0 +1,11 @@
+<div class="cuentas-list">
+  <div class="list-title">{{listTitle}}</div>
+  <div *ngIf = "cuentas.length > 0" class="list-container">
+      <app-pedidos-list-item
+      *ngFor="let cuenta of cuentas"
+      [cuenta]="cuenta"
+      (cuentaClickEvent)="cuentaClick($event)"
+    ></app-pedidos-list-item>
+  </div>
+  <div *ngIf = "cuentas.length < 1" class="empty-list-container">No hay pedidos actualmente...</div>
+</div>

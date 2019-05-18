@@ -1,0 +1,12 @@
+<div class="cuentas-list">
+  <div class="list-title">{{listTitle}}</div>
+  <div *ngIf = "cuentas.length > 0" 
+    class="list-container">
+      <app-cuentas-list-item 
+        *ngFor="let cuenta of cuentas"
+        [cuenta]="cuenta"
+      ></app-cuentas-list-item>
+  </div>
+  <div *ngIf = "cuentas.length < 1"
+  class="empty-list-container">No hay cuentas abiertas...</div>
+</div>

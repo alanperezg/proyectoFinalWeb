@@ -1,0 +1,11 @@
+<div class="sidebar">
+  <div class="logo">
+  </div>
+  <div class="sidebar-container">
+    <div class="options">
+      <div class="sidebar-option" [ngClass]="{'selected':currentTab==0}" routerLink="/admin"><div>Local</div><div *ngIf="cuentasLocal.length > 0" class="notification-circle">{{cuentasLocal.length}}</div></div>
+      <div class="sidebar-option" [ngClass]="{'selected':currentTab==1}" routerLink="/admin/pedidos"><div>Pedidos</div><div *ngIf="cuentasPedido.length > 0" class="notification-circle">{{cuentasPedido.length}}</div></div>
+      <div class="sidebar-option" [ngClass]="{'selected':currentTab==3}" routerLink="/admin/reportes">Reportes</div>
+    </div>
+  </div>  
+</div>

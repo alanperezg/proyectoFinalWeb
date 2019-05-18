@@ -1,0 +1,22 @@
+<div *ngIf="visibility" class="c-modal-background">
+    <div class="c-modal-container">
+        <div class="c-modal-top">
+            <div class="c-modal-title">Agregar productos</div>
+        </div>
+        <div class="c-modal-content">
+          <app-add-producto-modal-categorias-list 
+          *ngIf="showCategorias"
+          [categorias] = "categorias"
+          (categoriaClick) = "categoriaClick($event)"></app-add-producto-modal-categorias-list> 
+          <app-add-producto-modal-productos-list 
+          *ngIf="showProductos"
+          [productos] = "productos"
+          (returnCategoriasClick) = "returnToCategoriasClick()"
+          (inDeClickEvent) = "inDeClickEventClick()"></app-add-producto-modal-productos-list> 
+        </div>
+        <div class="c-modal-footer">
+            <div class="c-modal-button c-modal-button-black" (click)="addProductosCuenta()">Agregar ({{cuentaProductos}}) articulos</div>
+          <div class="c-modal-button c-modal-button-gray" (click)="hideModal()">Cerrar</div>
+        </div>
+    </div>
+  </div>

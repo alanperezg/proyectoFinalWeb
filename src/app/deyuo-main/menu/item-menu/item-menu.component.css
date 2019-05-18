@@ -1,0 +1,28 @@
+.layout-item-menu{
+    text-align: center;
+    padding-top: 15px;
+}
+img{
+    width: 100px;
+}
+
+.sell-components{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    display: inline-grid;    
+    width: 120px;
+}
+
+.sell-components button{
+    margin-top: 2px;    
+    font-size: 15px;
+    text-align: center;
+}
+
+.sell-components input{
+    width: 75px;
+    margin-left: 11px;
+    text-align: center;
+}

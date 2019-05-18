@@ -1,0 +1,60 @@
+.return-bar{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #949494;
+}
+.return-bar:hover{
+    color: #000;
+}
+.return-bar i{
+    font-size: 12px;
+    vertical-align: middle;
+}
+.cuenta-info-container{
+    display: flex;
+}
+.cuenta-info{
+    flex:1;
+    font-size: 14px;
+}
+.cuentas-button{
+    justify-content: flex-end;
+    flex: 1;
+    text-align: right;
+}
+.align-right-flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.cuenta-lista-productos{
+    margin-bottom:20px;
+}
+.cuenta-resumen{
+    font-size: 14px;
+}
+.cuenta-resumen-title{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.cuenta-resumen-container{
+    width: 200px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #eaeaea;
+}
+.cuenta-resumen-row{
+    display:flex;
+}
+.cuenta-resumen-row-header{
+    flex: 1;
+    font-weight:bold;
+}
+.cuenta-resumen-row-value{
+    flex: 1;
+    text-align:right;
+}

@@ -1,0 +1,37 @@
+<ngb-carousel #carousel>
+  <ng-template ngbSlide>
+    <img class="slide-img" src="{{SlideImg1}}" alt="Random first slide">
+    <div class="carousel-caption">        
+        <h1></h1>
+      <p class="slide-descrip"><mat-icon> phone</mat-icon>32 4106 0250 | <mat-icon> phone</mat-icon> 32 4120 3217</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class="slide-img" src="{{SlideImg2}}"  alt="Random second slide">
+    <div class="carousel-caption">
+      <h1>Horario:</h1>
+      <p class="slide-descrip">Jueves a Domingo 1:00pm - 9:pm.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class="slide-img" src="{{SlideImg3}}" alt="Random third slide">
+    <div class="carousel-caption">
+      <p class="slide-descrip"><a href="" routerLink="/promociones"><mat-icon>link</mat-icon> Ir a promociones</a></p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="icons">
+  <div class="icons-item" [routerLink]="['/usuario/promociones']"> 
+    <img src="{{MiPedidoImg}}" alt="">
+    <p class="icon-title">Mis pedido</p>
+  </div>
+  <div class="icons-item" [routerLink]="['/menu/pedidoNuevo']">
+    <img src="{{CrearPedidoImg}}" alt="">
+    <p class="icon-title" >Crear pedido</p>
+  </div>
+  <div class="icons-item" routerLink="/usuario/micarrito" >
+    <img src="{{MiCarritoImg}}" alt="">
+    <p class="icon-title">Mi carrito</p>
+  </div>
+</div>

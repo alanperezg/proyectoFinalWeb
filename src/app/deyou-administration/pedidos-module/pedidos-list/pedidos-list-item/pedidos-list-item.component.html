@@ -1,0 +1,13 @@
+<div class="list-item" (click)="cuentaClick()"> 
+    <div class="list-item-cliente">
+        <div><b>Nombre:</b> {{cuenta.cliente}}</div>
+        <div><b>Telefono:</b> {{cuenta.telefono}}</div>
+    </div>
+    <div class="list-item-direccion">
+        <div><b>Colonia:</b> {{cuenta.colonia}}</div>
+        <div><b>CP:</b> {{cuenta.cp}}</div>
+    </div>
+    <div class='list-item-estado'>
+        <div class='list-item-estado-circle {{cuenta.estadoPedido == 0 ? "estado-pendiente" : cuenta.estadoPedido == 1 ? "estado-atendiendo" : cuenta.estadoPedido == 2 ? "estado-cocina" : "estado-encamino"}}'>{{cuenta.estadoPedido == 0 ? "Pendiente" : cuenta.estadoPedido == 1 ? "Atendiendo" : cuenta.estadoPedido == 2 ? "En cocina" : "En camino"}}</div>
+    </div>
+  </div>

@@ -1,0 +1,42 @@
+<div *ngIf="visibility" class="c-modal-background">
+    <div class="c-modal-container">
+      <div class="c-modal-top">
+          <div class="c-modal-title">Detalles del pedido</div>
+      </div>
+      <div class="c-modal-content">
+        <div class="c-modal-section-title">Datos del cliente</div>
+        <div class="c-modal-row">
+          <div class="c-modal-row-title">Nombre</div>
+          <div class="c-modal-row-value">{{cuenta.cliente}}</div>
+        </div>
+        <div class="c-modal-row">
+          <div class="c-modal-row-title">Telefono</div>
+          <div class="c-modal-row-value">{{cuenta.telefono}}</div>
+        </div>
+        <div class="c-modal-row">
+          <div class="c-modal-row-title">Colonia</div>
+          <div class="c-modal-row-value">{{cuenta.colonia}}</div>
+        </div>
+        <div class="c-modal-row">
+          <div class="c-modal-row-title">Direccion</div>
+          <div class="c-modal-row-value">{{cuenta.direccion}}</div>
+        </div>
+        <div class="c-modal-row">
+          <div class="c-modal-row-title">CP</div>
+          <div class="c-modal-row-value">{{cuenta.cp}}</div>
+        </div>
+        <div class="c-modal-section-title">Estado de la orden</div>
+        <div class='c-modal-row-value {{cuenta.estadoPedido == 0 ? "estado-pendiente" : cuenta.estadoPedido == 1 ? "estado-atendiendo" : cuenta.estadoPedido == 2 ? "estado-cocina" : "estado-encamino"}}'>{{cuenta.estadoPedido == 0 ? "Pendiente" : cuenta.estadoPedido == 1 ? "Atendiendo" : cuenta.estadoPedido == 2 ? "En cocina" : "En camino"}}</div>
+        <div class="c-modal-section-title">Productos</div>
+        <div>
+          <app-pedido-modal-productos-list-item 
+          *ngFor="let producto of productos"
+          [orden]="producto"></app-pedido-modal-productos-list-item>
+        </div>
+      </div>
+      <div class="c-modal-footer">
+        <div class="c-modal-button c-modal-button-black" (click)="changeEstadoCuenta((cuenta.estadoPedido)+1)">{{cuenta.estadoPedido == (0) ? "Cambiar a estado 'Atendiendo'" : cuenta.estadoPedido == 1 ? "Cambiar a estado 'En cocina'" : cuenta.estadoPedido == 2 ? "Cambiar a estado 'En camino'" : "Cerrar y completar pedido"}}</div>
+        <div class="c-modal-button c-modal-button-gray" (click)="hideModal()">Cerrar</div>
+      </div>
+    </div>
+  </div> 

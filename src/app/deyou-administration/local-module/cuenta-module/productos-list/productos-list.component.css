@@ -1,0 +1,22 @@
+.productos-list{
+    margin-top:20px;
+}
+.productos-list .list-title{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.productos-list .list-container{
+    border: 1px solid #eaeaea;
+}
+.right-align{
+    text-align: right;
+}
+.productos-list .empty-list{
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #656565;
+}

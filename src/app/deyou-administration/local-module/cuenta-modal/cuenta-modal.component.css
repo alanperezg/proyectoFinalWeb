@@ -1,0 +1,97 @@
+.c-modal-background::before, .c-modal-background::after {
+    flex: 0 0 55px;
+    content: '';
+}
+.c-modal-background{
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.c-modal-container{
+    position: relative;
+    z-index: 2;
+    border-radius: 2px;
+    background-color: #fff;
+    margin: auto;
+    width: 600px;
+}
+.modal-row{
+    margin-bottom: 10px;
+}
+.modal-row-title{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modal-title{
+    font-size: 20px;
+}
+.c-modal-top{
+    padding: 10px 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.c-modal-title{
+    font-size: 20px;
+}
+.c-modal-content{
+    padding: 10px 40px;
+}
+.c-modal-footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.c-modal-button{
+    padding: 5px 8px;
+    font-size: 14px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left:10px;
+}
+.c-modal-button-gray{
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+}
+.c-modal-button-gray:hover{
+    background-color: #d0d0d0;
+    color:#fff;
+}
+.c-modal-button-black{
+    border: 1px solid #000;
+    background-color: #000;
+    color:#fff;
+}
+.c-modal-button-black:hover{
+    background-color:#67696b;
+    border: 1px solid #67696b;
+}
+.c-modal-background select{
+    border: 1px solid #dadada;
+    background-color: #fff;
+    -webkit-appearance: none;
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    border-radius:0px;
+    font-size: 14px;
+}
+.c-modal-background input{
+    border: 1px solid #dadada;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 14px;
+}

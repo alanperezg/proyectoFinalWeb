@@ -1,0 +1,7 @@
+<div>
+  <app-pedido-modal 
+  [setVisible]="cuentaModalSetVisible.asObservable()"
+  [setInvisible]="cuentaModalSetInvisible.asObservable()"></app-pedido-modal>
+  <div class="module-title">Pedidos</div>
+  <app-pedidos-list listTitle="Pedidos" (cuentaClickEvent)="openModalPedido($event)"></app-pedidos-list>
+</div>

@@ -1,0 +1,46 @@
+.list-item{
+    background-color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    cursor:pointer;
+}
+.list-item-cliente{
+    flex:1;
+}
+.list-item-direccion{
+    flex:1;
+}
+.list-item-estado{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.list-item-estado-circle{
+    width: 110px;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 26px;
+    font-size: 14px;
+    color: #fff;
+}
+.estado-pendiente{
+    background-color: #F44336
+}
+.estado-atendiendo{
+    background-color: #FF9800;
+}
+.estado-cocina{
+    background-color: #2196F3;
+}
+.estado-encamino{
+    background-color: #009688;
+}
+.list-item:hover{
+    background-color:#e4e4e4;
+}

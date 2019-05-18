@@ -1,0 +1,82 @@
+.module-title{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.filtros-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filtros-row:not(:last-child){
+    margin-bottom:10px;
+}
+.filtro{
+    text-align: center;
+    margin: 0px 10px;
+}
+.filtro-nombre{
+    font-size: 15px;
+    font-weight: bold;
+    color: #1e2226;
+}
+.filtro-input{
+    display: flex;
+}
+.filtro-input.input-venta{
+    width: 120px;
+}
+
+.filtros-container{
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+}
+.filtro-btn{
+    position: relative;
+    margin-top: auto;
+    
+}
+select{
+    border: 1px solid #dadada;
+    background-color: #fff;
+    -webkit-appearance: none;
+    width: 200px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 0px;
+    font-size: 14px;
+}
+input[type="text"], input[type="date"]{
+    border: 1px solid #dadada;
+    background-color: #fff;
+    width: 200px;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 30px;
+}
+.tableros-result{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.tablero{
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 10px;
+    min-width: 150px;
+}
+.tablero:not(:last-child){
+    margin-right: 40px;
+}
+.tablero-name{
+    font-size: 14px;
+    font-weight: bold;
+    color: #bd9b1e;
+}
+.tablero-value{
+    font-size: 25px;
+    font-weight: 200;
+}

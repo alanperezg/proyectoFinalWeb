@@ -1,0 +1,6 @@
+<div>
+  <app-cuenta-modal [setVisibility]="cuentaModalVisibility.asObservable()"></app-cuenta-modal>
+  <div class="module-title">Cuentas</div>
+  <div class="right-align"><app-button buttonText="Abrir cuenta" (onClick)= "openCuentaModal()"></app-button></div>
+  <app-cuentas-list listTitle="Cuentas abiertas"></app-cuentas-list>
+</div>

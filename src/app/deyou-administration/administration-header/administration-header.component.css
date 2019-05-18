@@ -1,0 +1,22 @@
+.administration-header{
+    position: fixed;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    height:60px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.option{
+    margin-left: 20px;
+}
+.logout-btn{
+    cursor: pointer;
+}

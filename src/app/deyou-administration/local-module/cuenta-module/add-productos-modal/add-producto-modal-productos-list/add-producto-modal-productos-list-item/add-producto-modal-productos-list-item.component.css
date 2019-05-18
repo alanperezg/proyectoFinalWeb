@@ -1,0 +1,26 @@
+.producto-item{
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+}
+.producto-item-counter-section{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.producto-item-counter{
+    padding: 0px 10px;
+}
+.product-item-plus, .product-item-minus{
+    text-align: center;
+    background-color: #9a9a9a;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0px 8px;
+    cursor: pointer;
+}
+.product-item-plus:hover, .product-item-minus:hover{
+    background-color: #5f5f5f;
+}

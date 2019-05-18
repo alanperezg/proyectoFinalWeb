@@ -1,0 +1,9 @@
+<div>
+  <div class="categorias-title">Categorias</div>
+  <div class="categorias-list">
+    <app-add-producto-modal-categorias-list-item 
+    *ngFor="let categoria of categorias"
+    [categoria]="categoria"
+    (categoriaEvent)="categoriaEvent($event)"></app-add-producto-modal-categorias-list-item>
+  </div>
+</div>

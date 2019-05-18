@@ -1,0 +1,9 @@
+.categoria-item{
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    cursor:pointer;
+}
+.categoria-item:hover{
+    background-color:#f3f3f3;
+}

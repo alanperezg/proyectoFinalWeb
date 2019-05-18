@@ -1,0 +1,23 @@
+.productos-list-item{
+    background-color: #fff;
+    padding: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+}
+.productos-list-item-desglose{
+    text-align: right;
+    flex: 1;
+}
+.productos-list-item-precio{
+    text-align: right;
+    font-weight: bold;
+}
+.productos-list-item-cancel{
+    margin-left: 15px;
+    color: #bbbbbb;
+    cursor: pointer;
+}
+.productos-list-item-cancel:hover{
+    color: #000;
+}

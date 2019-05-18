@@ -1,0 +1,6 @@
+<div>
+  <table cellspacing="0">
+    <tr><th>Fecha</th><th>Tipo de compra</th><th>Cliente</th><th>Mesero</th><th>Total</th></tr>
+    <tr *ngFor="let venta of ventas"><td>{{venta.fecha}}</td><td>{{venta.tipoVenta == 0? "Local":"Pedido"}}</td><td>{{venta.cliente == ""?"N/A":venta.cliente}}</td><td>{{venta.mesero == ""?"N/A":venta.mesero}}</td><td>${{venta.total}}</td></tr>
+  </table>
+</div>
